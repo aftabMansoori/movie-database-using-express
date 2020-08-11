@@ -1,0 +1,17 @@
+<%- include('./layouts/header') %> 
+
+<div class="box-header text-center">Most Searched</div>
+<div class="row">
+    <% list.forEach(list => { %>
+        <div class="col-lg-2 col-md-3 col-6">
+            <a href="/show?search=<%= list.id %> ">
+                <img class="poster" src="<%= list.medium_cover_image %> " alt="">
+                <div class="text-light text-center">
+                    <p class="font-weight-bold"><%= list.title_english %> </p>
+                </div>
+            </a>
+        </div>
+    <% }) %> 
+</div>
+
+<%- include('./layouts/footer') %> 

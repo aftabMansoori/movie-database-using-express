@@ -1,0 +1,48 @@
+<%- include('./layouts/header') %> 
+
+<div class="row">
+    <div class="col-md-3">
+        <img class="cover" src="<%= details.medium_cover_image %> " alt="...">
+    </div>
+    <div class="col-md-8">
+        <div class="p-4">
+            <p class="h1 uk-text-uppercase text-light">
+                <%= details.title_english %>
+            </p>
+            <hr class="uk-divider-small">
+            <p>
+                <span class="font-weight-bold text-light">ImDb : </span>
+                <span class="bg-success text-white pt-1 pb-1 pl-3 pr-3 font-weight-bold shadow rounded">
+                    <%= details.rating %>
+                </span>
+            </p>
+            <p>
+                <span class="font-weight-bold text-light">Year : </span>
+                <%= details.year %> 
+            </p>
+            <p>
+                <span class="font-weight-bold text-light">Runtime : </span>
+                <%= details.runtime %> min 
+            </p>
+            <p>
+                <span class="font-weight-bold text-light">Genre(s) : </span>
+                <span class="text-break"><%= details.genres %></span> 
+            </p>
+            <p>
+                <span class="font-weight-bold text-light">Like Count : </span>
+                <%= details.like_count %> 
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        <div class="description">
+            <p class="h3 font-weight-bold text-light">Synopsis : </p>
+            <p class="pt-4"><%= details.description_intro %></p>
+        </div>
+    </div>
+</div>
+
+
+<%- include('./layouts/footer') %> 

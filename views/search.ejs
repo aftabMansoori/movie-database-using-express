@@ -1,0 +1,17 @@
+<%- include('./layouts/header') %> 
+
+<p>Results for <span class="bg-success"><%= search.title %></span></p>
+
+<div class="row">
+<% search.forEach(search => { %> 
+    <div class="col-lg-2 col-md-3 col-6">
+        <a href="/show?search=<%= search.id %> ">
+            <img class="poster" src="<%= search.medium_cover_image %>" alt="..."> 
+            <p class="text-light text-center font-weight-bold"><%= search.title %></p> 
+        </a>
+    </div>
+    <% }) %>  
+</div>
+
+<%- include('./layouts/footer') %> 
+

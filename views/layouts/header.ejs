@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTS-mdB</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.5/css/uikit.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.5/js/uikit.min.js"></script> 
+</head>
+<body>
+
+    <section class="sticky-top" id="nabar">
+        <nav class="uk-navbar uk-background-secondary" uk-navbar>
+    
+            <div class="nav-overlay uk-navbar-left">
+        
+                <a class="uk-navbar-item uk-logo uk-text-bold text-light" href="/">YTS-mdB</a>
+        
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a class="text-light" href="/most-searched">Most Searched</a>                     
+                    </li>
+                    <li>
+                        <a class="text-light" href="/latest">Latest</a>                     
+                    </li>
+                    <li>
+                        <a class="text-light" href="/highest-rated">Highest Rated</a>                     
+                    </li>
+                </ul>
+        
+            </div>
+        
+            <div class="nav-overlay uk-navbar-right">
+        
+                <a class="uk-navbar-toggle" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+            <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+        
+                <div class="uk-navbar-item uk-width-expand">
+                    <form action="/search" method="GET" class="uk-search uk-search-navbar uk-width-1-1">
+                        <input class="uk-search-input" type="search" placeholder="Search..." name="s" autofocus>
+                    </form>
+                </div>
+        
+                <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        
+            </div>
+        
+        </nav>
+    </section>
+
+    <div class="main">
+        
+
+    

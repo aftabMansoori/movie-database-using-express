@@ -1,0 +1,29 @@
+<%- include('./layouts/header') %> 
+
+<div class="uk-navbar-container rounded mt-3" uk-navbar>
+    <div class="uk-navbar-left">
+
+        <div class="uk-navbar-item p-0">
+            <form action="/search" method="GET" class="uk-search uk-search-navbar">
+                <span uk-search-icon></span>
+                <input class="uk-search-input" type="search" name="s" placeholder="Search Your YTS Movie...">
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<p class="text-center mt-3">
+    <button class="uk-button uk-button-primary m-3 p-4">
+        <a href="/most-searched" class="h3 text-light">Most Searched</a> 
+    </button>
+    <button class="uk-button uk-button-primary m-3 p-4">
+        <a href="/latest" class="h3 text-light">Latest</a> 
+    </button>
+    <button class="uk-button uk-button-primary m-3 p-4">
+        <a href="/highest-rated" class="h3 text-light">Highest Rated</a> 
+    </button>
+</p>
+
+
+<%- include('./layouts/footer') %> 

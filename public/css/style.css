@@ -1,0 +1,85 @@
+p {
+    margin: 0!important;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+.main {
+    background-color: rgb(23, 25, 32);
+    padding: 3rem; 
+    color: gray;
+    font-size: 20px;
+    min-height: 90vh;
+}
+
+.box-header {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.see-more {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 2rem;
+    background-color: rgb(23, 25, 32);
+    width: 10%;
+    padding-left: 1rem;
+    margin-left: 4rem;
+    color: green;
+}
+
+.row-gap {
+    display: grid;
+    align-content: normal;
+    padding: 2.5rem;
+}
+
+.poster {
+    display: block;
+    height: 330px;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 1.5rem;
+    /* border-radius: 10px; */
+    box-shadow: 0rem 0rem 10px black;
+}
+
+.see-more {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cover {
+    display: block;
+    height: 400px;
+}
+
+.description {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-style: oblique;
+    text-align: justify;
+} 
+
+@media only screen and (max-width: 600px) {
+    .row-gap {
+        padding: 0rem;
+    }
+
+    .main {
+        padding: 0rem;
+    }
+}
