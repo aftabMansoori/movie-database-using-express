@@ -1,13 +1,17 @@
 # movie-database-using-express
 
-<h2>2.Documentation</h2>
-<h4>After downloading/cloning the repo,<h4>
+<p>
+  A movie database system, using external api calls from YTS with unirest where you can search all the movies available in YTS movie database.
+  
+</p>
+
+<h2>Resources</h2>
 <ul>
-  <li>run npm install for installing all the dependencies.</li>
-  <li>run npm Start and then the server will be running on port 5000</li>
-  <li></li>
+  <li><a href="https://yts.mx/api">YTS APIs</a></li>
+  <li><a href="https://getuikit.com/">UIkit (CSS Framework)</a></li>
 </ul>
-<h2>3.UI</h2>
+
+<h2>UI</h2>
 <img src="./UI/home.JPG" height="400px">
 <img src="./UI/most-searched.JPG" height="400px">
 <img src="./UI/search.JPG" height="400px">
