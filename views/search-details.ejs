@@ -1,12 +1,12 @@
 <%- include('./layouts/header') %> 
 
 <div class="row">
-    <div class="col-md-3">
-        <img class="cover" src="<%= details.medium_cover_image %> " alt="...">
+    <div class="col-md-3" data-aos="zoom-out">
+        <img class="cover mt-3" src="<%= details.medium_cover_image %> " alt="...">
     </div>
     <div class="col-md-8">
         <div class="p-4">
-            <p class="h1 uk-text-uppercase text-light">
+            <p class="h1 uk-text-uppercase text-light" data-aos="zoom-in">
                 <%= details.title_english %>
             </p>
             <hr class="uk-divider-small">
@@ -36,7 +36,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="description">
             <p class="h3 font-weight-bold text-light">Synopsis : </p>
             <p class="pt-4"><%= details.description_intro %></p>

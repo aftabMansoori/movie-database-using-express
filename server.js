@@ -12,17 +12,8 @@ app.use(express.static(path.join(__dirname,'public')))
 app.use(express.urlencoded({ extended: false, limit:'500kb' }))
 app.use(bodyParser.json())
 
-app.get('/', (req, res) => {
-    var most_searched = unirest('GET','https://yts.mx/api/v2/list_movies.json?minimum_rating=7&sort_by=like_count&order_by=desc&limit=12')
-
-    most_searched.end((result)=>{
-        if (result.error) throw new Error(result.error)
-        const most_searched = result.body.data.movies
-        
-        res.render('index', {
-            most_searched: most_searched
-        })
-    })
+app.get('/', (req, res) => {    
+    res.render('index')
 })
 
 app.get('/most-searched', (req, res) => {
@@ -66,7 +57,6 @@ app.get('/highest-rated', (req, res) => {
 
 app.get('/search', (req, res) => {
     const search = req.query.s
-    // var searchapi = unirest("GET", "https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/"+search+"");
     var searchapi = unirest("GET", "https://yts.mx/api/v2/list_movies.json?query_term="+search+"")
 
     searchapi.end(function (result) {

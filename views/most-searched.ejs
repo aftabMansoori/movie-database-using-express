@@ -3,7 +3,7 @@
 <div class="box-header text-center">Most Searched</div>
 <div class="row">
     <% list.forEach(list => { %>
-        <div class="col-lg-2 col-md-3 col-6">
+        <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <a href="/show?search=<%= list.id %> ">
                 <img class="poster" src="<%= list.medium_cover_image %> " alt="">
                 <div class="text-light text-center">

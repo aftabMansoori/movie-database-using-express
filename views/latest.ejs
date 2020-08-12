@@ -3,7 +3,7 @@
 <div class="box-header text-center">Latest Released</div>
 <div class="row">
     <% latest.forEach(list => { %>
-        <div class="col-lg-2 col-md-3 col-6">
+        <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <a href="/show?search=<%= list.id %> ">
                 <img class="poster" src="<%= list.medium_cover_image %> " alt="">
                 <span class="bg-success text-white pt-1 pb-1 pl-3 pr-3 font-weight-bold shadow rounded"><%= list.year %> </span>
