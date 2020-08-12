@@ -1,8 +1,9 @@
 # movie-database-using-express
 
+<h2>About</h2>
 <p>
   A movie database system, using external api calls from YTS with unirest where you can search all the movies available in YTS movie database.
-  
+  For frontend UIkit and Bootstrap has been used.
 </p>
 
 <h2>Resources</h2>
